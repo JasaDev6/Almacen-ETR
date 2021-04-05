@@ -143,11 +143,11 @@ namespace Almacen_ETR.CapaPresentacion
         private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Sistema de Inventario Laboratorio Protecciones" +
-                                "\nVersión 1.0" +
-                                "\n " + DateTime.Now.Year + "Propiedad de ENDE TRANSMISIÓN" +
-                                "\nDesarrollado por el Ingeniero Juan Antonio Sabath Awad" +
-                                "\nCelular 65368964" +
-                                "\nLinkedIn https://www.linkedin.com/in/antoniosabath/");
+                            "\nVersión 1.0.0" +
+                            "\n" + DateTime.Now.Year + "Propiedad de ENDE TRANSMISIÓN" +
+                            "\nDesarrollado por el Ingeniero Juan Antonio Sabath Awad" +
+                            "\nCelular 65368964" +
+                            "\nLinkedIn https://www.linkedin.com/in/antoniosabath/");
         }
     }
 }
