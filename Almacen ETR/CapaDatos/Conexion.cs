@@ -11,7 +11,7 @@ namespace Almacen_ETR
 {
     class Conexion
     {
-        private SqlConnection conexion = new SqlConnection("Data Source = Desktop-Jasa; Initial Catalog = laboratory; Integrated Security = True");
+        private SqlConnection conexion = new SqlConnection(@"Data Source=\\10.231.36.70\pipe\MSSQL$INVENTARIO_LAB\sql\query;Initial Catalog=Lab;User ID=sa;Password=Ende123**");
 
         //@"Data Source=\\10.231.36.70\pipe\MSSQL$INVENTARIO_LAB\sql\query;Initial Catalog=Lab;User ID=sa;Password=Ende123**"
         //"Data Source = Desktop-Jasa; Initial Catalog = laboratory; Integrated Security = True"
