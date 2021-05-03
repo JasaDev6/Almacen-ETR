@@ -522,7 +522,6 @@ namespace Almacen_ETR
             this.Name = "MenuAdminForm";
             this.Text = "Sistema de Inventario Laboratorio Protecciones v2.0.0";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.MenuAdminForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip2.ResumeLayout(false);

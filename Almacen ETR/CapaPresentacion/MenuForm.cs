@@ -76,12 +76,26 @@ namespace Almacen_ETR
 
         private void MenuItemNewTipe_Click(object sender, EventArgs e)
         {
-            openForm(new ProductsForm());
+            if (typeUser==1)
+            {
+                openForm(new ProductsForm());
+            }
+            else
+            {
+                MessageBox.Show("No tiene acceso solo el administrador");
+            }
         }
 
         private void MenuItemNewUser_Click(object sender, EventArgs e)
         {
-            openForm(new UserForm());
+            if (typeUser == 1)
+            {
+                openForm(new UserForm());
+            }
+            else
+            {
+                MessageBox.Show("No tiene acceso solo el administrador");
+            }
         }
 
         private void MenuItemRegisterIncomeETR_Click(object sender, EventArgs e)
@@ -134,9 +148,5 @@ namespace Almacen_ETR
             openForm(new SearchIncomeUserForm("Corporación"));
         }
 
-        private void MenuAdminForm_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
