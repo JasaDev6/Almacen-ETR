@@ -70,6 +70,7 @@ namespace Almacen_ETR.CapaPresentacion
             // 
             // btnEditRegisterOutput
             // 
+            this.btnEditRegisterOutput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEditRegisterOutput.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditRegisterOutput.Location = new System.Drawing.Point(798, 521);
             this.btnEditRegisterOutput.Name = "btnEditRegisterOutput";
@@ -81,6 +82,7 @@ namespace Almacen_ETR.CapaPresentacion
             // 
             // btnDeleteRegisterOutput
             // 
+            this.btnDeleteRegisterOutput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDeleteRegisterOutput.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteRegisterOutput.Location = new System.Drawing.Point(975, 521);
             this.btnDeleteRegisterOutput.Name = "btnDeleteRegisterOutput";

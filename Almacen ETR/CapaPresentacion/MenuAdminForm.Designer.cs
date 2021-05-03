@@ -494,7 +494,7 @@ namespace Almacen_ETR
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Location = new System.Drawing.Point(12, 67);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1179, 511);
+            this.panel1.Size = new System.Drawing.Size(1179, 549);
             this.panel1.TabIndex = 18;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -503,7 +503,7 @@ namespace Almacen_ETR
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1203, 590);
+            this.ClientSize = new System.Drawing.Size(1203, 628);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnOutputCORP);
             this.Controls.Add(this.btnIncomeCORP);
@@ -518,7 +518,7 @@ namespace Almacen_ETR
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnUser);
-            this.MaximizeBox = false;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MenuAdminForm";
             this.Text = "Sistema de Inventario Laboratorio Protecciones v2.0.0";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
