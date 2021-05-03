@@ -124,7 +124,7 @@ namespace Almacen_ETR
             this.btnOutput.Name = "btnOutput";
             this.btnOutput.Size = new System.Drawing.Size(184, 30);
             this.btnOutput.TabIndex = 10;
-            this.btnOutput.Text = "Salida";
+            this.btnOutput.Text = "Registrar salida";
             this.btnOutput.UseVisualStyleBackColor = true;
             this.btnOutput.Click += new System.EventHandler(this.btnOutput_Click);
             // 
@@ -204,6 +204,7 @@ namespace Almacen_ETR
             this.Controls.Add(this.comboBoxListOne);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SearchIncome";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Buscar Ingresados";

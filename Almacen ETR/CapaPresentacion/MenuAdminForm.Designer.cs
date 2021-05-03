@@ -50,15 +50,12 @@ namespace Almacen_ETR
             this.MenuItemNewUser = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuItemNewTipe = new System.Windows.Forms.ToolStripMenuItem();
             this.busquedaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ingresosToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.MenuItemSearchUserIncomeETR = new System.Windows.Forms.ToolStripMenuItem();
-            this.MenuItemSearchUserIncomeCORP = new System.Windows.Forms.ToolStripMenuItem();
-            this.salidasToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.MenuItemSearchUserOutputETR = new System.Windows.Forms.ToolStripMenuItem();
-            this.MenuItemSearchUserOutputCORP = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuItemSearchIngresosETR = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuItemSearchIngresosCORP = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuItemSearchUserETR = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuItemSearchUserCORP = new System.Windows.Forms.ToolStripMenuItem();
+            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salidaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.busquedaPorUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -83,9 +80,7 @@ namespace Almacen_ETR
             this.btnOutputETR = new System.Windows.Forms.Button();
             this.btnIncomeCORP = new System.Windows.Forms.Button();
             this.btnOutputCORP = new System.Windows.Forms.Button();
-            this.btnRegisterUser = new System.Windows.Forms.Button();
-            this.btnNewTipe = new System.Windows.Forms.Button();
-            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip2.SuspendLayout();
@@ -114,22 +109,20 @@ namespace Almacen_ETR
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(396, 198);
+            this.pictureBox2.Location = new System.Drawing.Point(574, 29);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(116, 30);
+            this.pictureBox2.Size = new System.Drawing.Size(152, 30);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(116, 198);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 29);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(116, 30);
+            this.pictureBox1.Size = new System.Drawing.Size(152, 30);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
@@ -193,7 +186,7 @@ namespace Almacen_ETR
             this.salidaToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(649, 24);
+            this.menuStrip2.Size = new System.Drawing.Size(1203, 24);
             this.menuStrip2.TabIndex = 2;
             // 
             // registrarToolStripMenuItem
@@ -245,57 +238,25 @@ namespace Almacen_ETR
             // busquedaToolStripMenuItem1
             // 
             this.busquedaToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ingresosToolStripMenuItem2,
-            this.salidasToolStripMenuItem2});
+            this.MenuItemSearchIngresosETR,
+            this.MenuItemSearchIngresosCORP});
             this.busquedaToolStripMenuItem1.Name = "busquedaToolStripMenuItem1";
             this.busquedaToolStripMenuItem1.Size = new System.Drawing.Size(139, 20);
-            this.busquedaToolStripMenuItem1.Text = "Busqueda por Usuario";
+            this.busquedaToolStripMenuItem1.Text = "Busqueda de Ingresos";
             // 
-            // ingresosToolStripMenuItem2
+            // MenuItemSearchIngresosETR
             // 
-            this.ingresosToolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MenuItemSearchUserIncomeETR,
-            this.MenuItemSearchUserIncomeCORP});
-            this.ingresosToolStripMenuItem2.Name = "ingresosToolStripMenuItem2";
-            this.ingresosToolStripMenuItem2.Size = new System.Drawing.Size(121, 22);
-            this.ingresosToolStripMenuItem2.Text = "Ingresos";
+            this.MenuItemSearchIngresosETR.Name = "MenuItemSearchIngresosETR";
+            this.MenuItemSearchIngresosETR.Size = new System.Drawing.Size(141, 22);
+            this.MenuItemSearchIngresosETR.Text = "ENDE ETR";
+            this.MenuItemSearchIngresosETR.Click += new System.EventHandler(this.MenuItemSearchIngresosETR_Click);
             // 
-            // MenuItemSearchUserIncomeETR
+            // MenuItemSearchIngresosCORP
             // 
-            this.MenuItemSearchUserIncomeETR.Name = "MenuItemSearchUserIncomeETR";
-            this.MenuItemSearchUserIncomeETR.Size = new System.Drawing.Size(141, 22);
-            this.MenuItemSearchUserIncomeETR.Text = "ENDE ETR";
-            this.MenuItemSearchUserIncomeETR.Click += new System.EventHandler(this.MenuItemSearchUserIncomeETR_Click);
-            // 
-            // MenuItemSearchUserIncomeCORP
-            // 
-            this.MenuItemSearchUserIncomeCORP.Name = "MenuItemSearchUserIncomeCORP";
-            this.MenuItemSearchUserIncomeCORP.Size = new System.Drawing.Size(141, 22);
-            this.MenuItemSearchUserIncomeCORP.Text = "ENDE CORP";
-            this.MenuItemSearchUserIncomeCORP.Click += new System.EventHandler(this.MenuItemSearchUserIncomeCORP_Click);
-            // 
-            // salidasToolStripMenuItem2
-            // 
-            this.salidasToolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MenuItemSearchUserOutputETR,
-            this.MenuItemSearchUserOutputCORP});
-            this.salidasToolStripMenuItem2.Name = "salidasToolStripMenuItem2";
-            this.salidasToolStripMenuItem2.Size = new System.Drawing.Size(121, 22);
-            this.salidasToolStripMenuItem2.Text = "Salidas";
-            // 
-            // MenuItemSearchUserOutputETR
-            // 
-            this.MenuItemSearchUserOutputETR.Name = "MenuItemSearchUserOutputETR";
-            this.MenuItemSearchUserOutputETR.Size = new System.Drawing.Size(141, 22);
-            this.MenuItemSearchUserOutputETR.Text = "ENDE ETR";
-            this.MenuItemSearchUserOutputETR.Click += new System.EventHandler(this.MenuItemSearchUserOutputETR_Click);
-            // 
-            // MenuItemSearchUserOutputCORP
-            // 
-            this.MenuItemSearchUserOutputCORP.Name = "MenuItemSearchUserOutputCORP";
-            this.MenuItemSearchUserOutputCORP.Size = new System.Drawing.Size(141, 22);
-            this.MenuItemSearchUserOutputCORP.Text = "ENDE CORP";
-            this.MenuItemSearchUserOutputCORP.Click += new System.EventHandler(this.MenuItemSearchUserOutputCORP_Click);
+            this.MenuItemSearchIngresosCORP.Name = "MenuItemSearchIngresosCORP";
+            this.MenuItemSearchIngresosCORP.Size = new System.Drawing.Size(141, 22);
+            this.MenuItemSearchIngresosCORP.Text = "ENDE CORP";
+            this.MenuItemSearchIngresosCORP.Click += new System.EventHandler(this.MenuItemSearchIngresosCORP_Click);
             // 
             // buscarToolStripMenuItem
             // 
@@ -303,8 +264,8 @@ namespace Almacen_ETR
             this.MenuItemSearchUserETR,
             this.MenuItemSearchUserCORP});
             this.buscarToolStripMenuItem.Name = "buscarToolStripMenuItem";
-            this.buscarToolStripMenuItem.Size = new System.Drawing.Size(106, 20);
-            this.buscarToolStripMenuItem.Text = "Buscar Ingresos";
+            this.buscarToolStripMenuItem.Size = new System.Drawing.Size(122, 20);
+            this.buscarToolStripMenuItem.Text = "Busqueda de Stock";
             // 
             // MenuItemSearchUserETR
             // 
@@ -319,6 +280,13 @@ namespace Almacen_ETR
             this.MenuItemSearchUserCORP.Size = new System.Drawing.Size(141, 22);
             this.MenuItemSearchUserCORP.Text = "ENDE CORP";
             this.MenuItemSearchUserCORP.Click += new System.EventHandler(this.MenuItemSearchUserCORP_Click);
+            // 
+            // acercaDeToolStripMenuItem
+            // 
+            this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
+            this.acercaDeToolStripMenuItem.Text = "Acerca de ";
+            this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
             // 
             // salidaToolStripMenuItem
             // 
@@ -465,12 +433,12 @@ namespace Almacen_ETR
             // 
             // btnIncomeETR
             // 
-            this.btnIncomeETR.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnIncomeETR.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnIncomeETR.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnIncomeETR.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIncomeETR.Location = new System.Drawing.Point(86, 267);
+            this.btnIncomeETR.Location = new System.Drawing.Point(170, 29);
             this.btnIncomeETR.Name = "btnIncomeETR";
-            this.btnIncomeETR.Size = new System.Drawing.Size(178, 32);
+            this.btnIncomeETR.Size = new System.Drawing.Size(196, 32);
             this.btnIncomeETR.TabIndex = 12;
             this.btnIncomeETR.Text = "Registro de Ingreso ENDE ETR";
             this.btnIncomeETR.UseVisualStyleBackColor = false;
@@ -478,25 +446,25 @@ namespace Almacen_ETR
             // 
             // btnOutputETR
             // 
-            this.btnOutputETR.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnOutputETR.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnOutputETR.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnOutputETR.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOutputETR.Location = new System.Drawing.Point(86, 329);
+            this.btnOutputETR.Location = new System.Drawing.Point(372, 29);
             this.btnOutputETR.Name = "btnOutputETR";
-            this.btnOutputETR.Size = new System.Drawing.Size(178, 32);
+            this.btnOutputETR.Size = new System.Drawing.Size(196, 32);
             this.btnOutputETR.TabIndex = 13;
-            this.btnOutputETR.Text = "Registro de Salida ENDE ETR";
+            this.btnOutputETR.Text = "Busqueda de salidas ENDE ETR";
             this.btnOutputETR.UseVisualStyleBackColor = false;
             this.btnOutputETR.Click += new System.EventHandler(this.btnOutputETR_Click);
             // 
             // btnIncomeCORP
             // 
-            this.btnIncomeCORP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnIncomeCORP.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnIncomeCORP.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnIncomeCORP.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIncomeCORP.Location = new System.Drawing.Point(365, 267);
+            this.btnIncomeCORP.Location = new System.Drawing.Point(732, 29);
             this.btnIncomeCORP.Name = "btnIncomeCORP";
-            this.btnIncomeCORP.Size = new System.Drawing.Size(178, 32);
+            this.btnIncomeCORP.Size = new System.Drawing.Size(196, 32);
             this.btnIncomeCORP.TabIndex = 14;
             this.btnIncomeCORP.Text = "Registro de Ingreso ENDE CORP";
             this.btnIncomeCORP.UseVisualStyleBackColor = false;
@@ -504,56 +472,39 @@ namespace Almacen_ETR
             // 
             // btnOutputCORP
             // 
-            this.btnOutputCORP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnOutputCORP.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnOutputCORP.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnOutputCORP.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOutputCORP.Location = new System.Drawing.Point(365, 329);
+            this.btnOutputCORP.Location = new System.Drawing.Point(934, 29);
             this.btnOutputCORP.Name = "btnOutputCORP";
-            this.btnOutputCORP.Size = new System.Drawing.Size(178, 32);
+            this.btnOutputCORP.Size = new System.Drawing.Size(196, 32);
             this.btnOutputCORP.TabIndex = 15;
-            this.btnOutputCORP.Text = "Registro de Salida ENDE  CORP";
+            this.btnOutputCORP.Text = "Busqueda de salidas ENDE CORP";
             this.btnOutputCORP.UseVisualStyleBackColor = false;
             this.btnOutputCORP.Click += new System.EventHandler(this.btnOutputCORP_Click);
             // 
-            // btnRegisterUser
+            // panel1
             // 
-            this.btnRegisterUser.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnRegisterUser.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegisterUser.Location = new System.Drawing.Point(86, 110);
-            this.btnRegisterUser.Name = "btnRegisterUser";
-            this.btnRegisterUser.Size = new System.Drawing.Size(178, 32);
-            this.btnRegisterUser.TabIndex = 16;
-            this.btnRegisterUser.Text = "Registrar Usuario";
-            this.btnRegisterUser.UseVisualStyleBackColor = true;
-            this.btnRegisterUser.Click += new System.EventHandler(this.btnRegisterUser_Click);
-            // 
-            // btnNewTipe
-            // 
-            this.btnNewTipe.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnNewTipe.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewTipe.Location = new System.Drawing.Point(365, 110);
-            this.btnNewTipe.Name = "btnNewTipe";
-            this.btnNewTipe.Size = new System.Drawing.Size(178, 32);
-            this.btnNewTipe.TabIndex = 17;
-            this.btnNewTipe.Text = "Nuevos tipos/modelos";
-            this.btnNewTipe.UseVisualStyleBackColor = true;
-            this.btnNewTipe.Click += new System.EventHandler(this.btnNewTipe_Click);
-            // 
-            // acercaDeToolStripMenuItem
-            // 
-            this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
-            this.acercaDeToolStripMenuItem.Text = "Acerca de ";
-            this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Location = new System.Drawing.Point(12, 67);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1179, 511);
+            this.panel1.TabIndex = 18;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // MenuAdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(649, 418);
-            this.Controls.Add(this.btnNewTipe);
-            this.Controls.Add(this.btnRegisterUser);
+            this.ClientSize = new System.Drawing.Size(1203, 590);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnOutputCORP);
             this.Controls.Add(this.btnIncomeCORP);
             this.Controls.Add(this.btnOutputETR);
@@ -567,9 +518,11 @@ namespace Almacen_ETR
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnUser);
+            this.MaximizeBox = false;
             this.Name = "MenuAdminForm";
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = " Menu del Administrador";
+            this.Text = "Sistema de Inventario Laboratorio Protecciones v2.0.0";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MenuAdminForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip2.ResumeLayout(false);
@@ -620,12 +573,6 @@ namespace Almacen_ETR
         private System.Windows.Forms.ToolStripMenuItem MenuItemNewUser;
         private System.Windows.Forms.ToolStripMenuItem MenuItemNewTipe;
         private System.Windows.Forms.ToolStripMenuItem busquedaToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem ingresosToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem MenuItemSearchUserIncomeETR;
-        private System.Windows.Forms.ToolStripMenuItem MenuItemSearchUserIncomeCORP;
-        private System.Windows.Forms.ToolStripMenuItem salidasToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem MenuItemSearchUserOutputETR;
-        private System.Windows.Forms.ToolStripMenuItem MenuItemSearchUserOutputCORP;
         private System.Windows.Forms.ToolStripMenuItem buscarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem MenuItemSearchUserETR;
         private System.Windows.Forms.ToolStripMenuItem MenuItemSearchUserCORP;
@@ -634,8 +581,9 @@ namespace Almacen_ETR
         private System.Windows.Forms.Button btnOutputETR;
         private System.Windows.Forms.Button btnIncomeCORP;
         private System.Windows.Forms.Button btnOutputCORP;
-        private System.Windows.Forms.Button btnRegisterUser;
-        private System.Windows.Forms.Button btnNewTipe;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ToolStripMenuItem MenuItemSearchIngresosETR;
+        private System.Windows.Forms.ToolStripMenuItem MenuItemSearchIngresosCORP;
     }
 }

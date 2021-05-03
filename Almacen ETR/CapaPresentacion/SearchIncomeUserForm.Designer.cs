@@ -92,6 +92,7 @@ namespace Almacen_ETR.CapaPresentacion
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.comboBoxSearchUser);
             this.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SearchIncomeUserForm";
             this.Text = "Buscar Ingresos por Usuarios";
             this.Load += new System.EventHandler(this.SearchIncomeUserForm_Load);

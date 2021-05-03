@@ -23,148 +23,85 @@ namespace Almacen_ETR
             InitializeComponent();
         }
 
-        private void MenuItemSearchUserIncomeETR_Click(object sender, EventArgs e)
+        private void openForm(object formUser)
         {
-            this.Hide();
-            SearchIncomeUserForm formETR = new SearchIncomeUserForm("Transmisión");
-            formETR.ShowDialog();
-            formETR = null;
-            this.Show();
-        }
-
-        private void MenuItemSearchUserIncomeCORP_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            SearchIncomeUserForm formETR = new SearchIncomeUserForm("Corporación");
-            formETR.ShowDialog();
-            formETR = null;
-            this.Show();
+            if (this.panel1.Controls.Count > 0)
+            {
+                this.panel1.Controls.RemoveAt(0);
+            }
+            Form fh = formUser as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.panel1.Controls.Add(fh);
+            this.panel1.Tag = formUser;
+            fh.Show();
         }
 
         private void MenuItemSearchUserOutputETR_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            SearchOutputUserForm formETR = new SearchOutputUserForm("Transmisión");
-            formETR.ShowDialog();
-            formETR = null;
-            this.Show();
+            //this.Hide();
+            //SearchOutputUserForm formETR = new SearchOutputUserForm("Transmisión");
+            //formETR.ShowDialog();
+            //formETR = null;
+            //this.Show();
+
+            openForm(new SearchOutputUserForm("Transmisión"));
+
         }
 
         private void MenuItemSearchUserOutputCORP_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            SearchOutputUserForm formETR = new SearchOutputUserForm("Corporación");
-            formETR.ShowDialog();
-            formETR = null;
-            this.Show();
-        }
-
-        private void btnRegisterUser_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            UserForm formUser = new UserForm();
-            formUser.ShowDialog();
-            formUser = null;
-            this.Show();
-        }
-
-        private void btnNewTipe_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            ProductsForm formETR = new ProductsForm();
-            formETR.ShowDialog();
-            formETR = null;
-            this.Show();
+            openForm(new SearchOutputUserForm("Corporación"));
         }
 
         private void btnIncomeETR_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            IncomeStoreForm formETR = new IncomeStoreForm("Transmisión", IdUse, typeUser);
-            formETR.ShowDialog();
-            formETR = null;
-            this.Show();
+            openForm(new IncomeStoreForm("Transmisión", IdUse, typeUser));
         }
 
         private void btnIncomeCORP_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            IncomeStoreForm formETR = new IncomeStoreForm("Corporación", IdUse, typeUser);
-            formETR.ShowDialog();
-            formETR = null;
-            this.Show();
+            openForm(new IncomeStoreForm("Corporación", IdUse, typeUser));
         }
 
         private void btnOutputETR_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            RegistryOutputForm formETR = new RegistryOutputForm(IdUse, typeUser, "Transmisión");
-            formETR.ShowDialog();
-            formETR = null;
-            this.Show();
+            openForm(new RegistryOutputForm(IdUse, typeUser, "Transmisión"));
         }
 
         private void btnOutputCORP_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            RegistryOutputForm formETR = new RegistryOutputForm(IdUse, typeUser, "Corporación");
-            formETR.ShowDialog();
-            formETR = null;
-            this.Show();
+            openForm(new RegistryOutputForm(IdUse, typeUser, "Corporación"));
         }
 
         private void MenuItemNewTipe_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            ProductsForm formETR = new ProductsForm();
-            formETR.ShowDialog();
-            formETR = null;
-            this.Show();
+            openForm(new ProductsForm());
         }
 
         private void MenuItemNewUser_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            UserForm formUser = new UserForm();
-            formUser.ShowDialog();
-            formUser = null;
-            this.Show();
+            openForm(new UserForm());
         }
 
         private void MenuItemRegisterIncomeETR_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            IncomeStoreForm formETR = new IncomeStoreForm("Transmisión", IdUse, typeUser);
-            formETR.ShowDialog();
-            formETR = null;
-            this.Show();
+            openForm(new IncomeStoreForm("Transmisión", IdUse, typeUser));
         }
 
         private void MenuItemRegisterIncomeCORP_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            IncomeStoreForm formETR = new IncomeStoreForm("Corporación", IdUse, typeUser);
-            formETR.ShowDialog();
-            formETR = null;
-            this.Show();
+            openForm(new IncomeStoreForm("Corporación", IdUse, typeUser));
         }
 
         private void MenuItemSearchUserETR_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            SearchIncome formETR = new SearchIncome("Transmisión", IdUse);
-            formETR.ShowDialog();
-            formETR = null;
-            this.Show();
+            openForm(new SearchIncome("Transmisión", IdUse));
         }
 
         private void MenuItemSearchUserCORP_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            SearchIncome formETR = new SearchIncome("Corporación", IdUse);
-            formETR.ShowDialog();
-            formETR = null;
-            this.Show();
+             openForm(new SearchIncome("Corporación", IdUse));
         }
 
         private void salidaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -180,6 +117,26 @@ namespace Almacen_ETR
                             "\nDesarrollado por el Ingeniero Juan Antonio Sabath Awad" +
                             "\nCelular 65368964" +
                             "\nLinkedIn https://www.linkedin.com/in/antoniosabath/");
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void MenuItemSearchIngresosETR_Click(object sender, EventArgs e)
+        {
+            openForm(new SearchIncomeUserForm("Transmisión"));
+        }
+
+        private void MenuItemSearchIngresosCORP_Click(object sender, EventArgs e)
+        {
+            openForm(new SearchIncomeUserForm("Corporación"));
+        }
+
+        private void MenuAdminForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

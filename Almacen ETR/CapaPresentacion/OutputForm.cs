@@ -25,11 +25,10 @@ namespace Almacen_ETR
             IdUser = IdUse;
         }
 
-        public void getDataProducts(string Marca, string Modelo, string Tipo, string Nserie, string BDI, string ULab, string IdIn)
+        public void getDataProducts(string Marca, string Modelo, string Nserie, string BDI, string ULab, string IdIn)
         {
             LabelMarca.Text = Marca;
             LabelModelo.Text = Modelo;
-            LabelTipo.Text = Tipo;
             LabelNserie.Text = Nserie;
             LabelBDI.Text = BDI;
             LabelULab.Text = ULab;
@@ -89,11 +88,10 @@ namespace Almacen_ETR
             }
         }
 
-        public void getEditRegisterOutput(string Marca, string Modelo, string Tipo, string Nserie, string BDI, string ULab, string Destino, string TableroDestino, string FechaSalida, string Observacion, string IdOutputEdit, bool edit)
+        public void getEditRegisterOutput(string Marca, string Modelo, string Nserie, string BDI, string ULab, string Destino, string TableroDestino, string FechaSalida, string Observacion, string IdOutputEdit, bool edit)
         {
             LabelMarca.Text = Marca;
             LabelModelo.Text = Modelo;
-            LabelTipo.Text = Tipo;
             LabelNserie.Text = Nserie;
             LabelBDI.Text = BDI;
             LabelULab.Text = ULab;

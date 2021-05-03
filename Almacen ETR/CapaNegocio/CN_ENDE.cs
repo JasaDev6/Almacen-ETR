@@ -26,14 +26,14 @@ namespace Almacen_ETR
             return tabla;
         }
 
-        public void insertETR(string marca, string description, string modelo, string version, string tipo, string vnominal, string inominal, string nserie, string BDI, string origen, string ULab, string estado, string tablero, string dateIni, string Obs, string ende, int IdUse)
+        public void insertETR(string marca, string description, string modelo, string version, string vnominal, string inominal, string nserie, string BDI, string origen, string ULab, string estado, string tablero, string dateIni, string Obs, string ende, int IdUse)
         {
-            objectCD.insert(marca, description, modelo, version, tipo, vnominal, inominal, nserie, BDI, origen, ULab, estado, tablero, dateIni, Obs, ende, IdUse);
+            objectCD.insert(marca, description, modelo, version, vnominal, inominal, nserie, BDI, origen, ULab, estado, tablero, dateIni, Obs, ende, IdUse);
         }
 
-        public void editETR(string marca, string description, string modelo, string version, string tipo, string vnominal, string inominal, string nserie, string BDI, string origen, string ULab, string estado, string tablero, string dateIni, string Obs, string id, string ende)
+        public void editETR(string marca, string description, string modelo, string version, string vnominal, string inominal, string nserie, string BDI, string origen, string ULab, string estado, string tablero, string dateIni, string Obs, string id, string ende)
         {
-            objectCD.edit(marca, description, modelo, version, tipo, vnominal, inominal, nserie, BDI, origen, ULab, estado, tablero, dateIni, Obs, Convert.ToInt32(id), ende);
+            objectCD.edit(marca, description, modelo, version, vnominal, inominal, nserie, BDI, origen, ULab, estado, tablero, dateIni, Obs, Convert.ToInt32(id), ende);
         }
 
         public void deleteETR(string id)

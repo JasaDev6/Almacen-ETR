@@ -19,14 +19,14 @@ namespace Almacen_ETR.CapaNegocio
             return tabla;
         }
 
-        public void insert(string Marca, string Modelo, string Tipo, string Vnominal, string Inominal)
+        public void insert(string Marca, string Modelo, string Vnominal, string Inominal)
         {
-            objectCD.insert(Marca, Modelo, Tipo, Vnominal, Inominal);
+            objectCD.insert(Marca, Modelo, Vnominal, Inominal);
         }
 
-        public void edit(string Marca, string Modelo, string Tipo, string Vnominal, string Inominal, string Id)
+        public void edit(string Marca, string Modelo, string Vnominal, string Inominal, string Id)
         {
-            objectCD.edit(Marca, Modelo, Tipo, Vnominal, Inominal, Convert.ToInt32(Id));
+            objectCD.edit(Marca, Modelo, Vnominal, Inominal, Convert.ToInt32(Id));
         }
 
         public void delete(string id)

@@ -20,3 +20,4 @@ C:\Users\anton\source\repos\Almacen ETR\Almacen ETR\obj\Release\Almacen ETR.cspr
 C:\Users\anton\source\repos\Almacen ETR\Almacen ETR\obj\Release\Almacen ETR.csproj.CopyComplete
 C:\Users\anton\source\repos\Almacen ETR\Almacen ETR\obj\Release\Almacen ETR.exe
 C:\Users\anton\source\repos\Almacen ETR\Almacen ETR\obj\Release\Almacen ETR.pdb
+C:\Users\anton\source\repos\Almacen ETR\Almacen ETR\obj\Release\Almacen ETR.csprojAssemblyReference.cache

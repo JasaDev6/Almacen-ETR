@@ -49,10 +49,6 @@ namespace Almacen_ETR.CapaPresentacion
             //{
             //    return true;
             //}
-            //if (!string.IsNullOrEmpty(textBoxTipo.Text))
-            //{
-            //    return true;
-            //}
             //if (!string.IsNullOrEmpty(textBoxVnominal.Text))
             //{
             //    return true;
@@ -70,7 +66,7 @@ namespace Almacen_ETR.CapaPresentacion
                 try
                 {
                     Ischeckfields();
-                    objectCN.insert(textBoxMarca.Text, textBoxModelo.Text, textBoxTipo.Text, textBoxVnominal.Text, textBoxInominal.Text);
+                    objectCN.insert(textBoxMarca.Text, textBoxModelo.Text, textBoxVnominal.Text, textBoxInominal.Text);
                     MessageBox.Show("se inserto correctamente");
                     show();
                     cleanForm();
@@ -84,7 +80,7 @@ namespace Almacen_ETR.CapaPresentacion
             {
                 try
                 {
-                    objectCN.edit(textBoxMarca.Text, textBoxModelo.Text, textBoxTipo.Text, textBoxVnominal.Text, textBoxInominal.Text, Id);
+                    objectCN.edit(textBoxMarca.Text, textBoxModelo.Text, textBoxVnominal.Text, textBoxInominal.Text, Id);
                     MessageBox.Show("se edito correctamente");
                     show();
                     cleanForm();
@@ -101,7 +97,6 @@ namespace Almacen_ETR.CapaPresentacion
         {
             textBoxMarca.Clear();
             textBoxModelo.Clear();
-            textBoxTipo.Clear();
             textBoxVnominal.Clear();
             textBoxInominal.Clear();
         }
@@ -114,7 +109,6 @@ namespace Almacen_ETR.CapaPresentacion
                 Id = dataGridView1.CurrentRow.Cells["Id"].Value.ToString();
                 textBoxMarca.Text = dataGridView1.CurrentRow.Cells["Marca"].Value.ToString();
                 textBoxModelo.Text = dataGridView1.CurrentRow.Cells["Modelo"].Value.ToString();
-                textBoxTipo.Text = dataGridView1.CurrentRow.Cells["Tipo"].Value.ToString();
                 textBoxVnominal.Text = dataGridView1.CurrentRow.Cells["Vnominal"].Value.ToString();
                 textBoxInominal.Text = dataGridView1.CurrentRow.Cells["Inominal"].Value.ToString();
             }

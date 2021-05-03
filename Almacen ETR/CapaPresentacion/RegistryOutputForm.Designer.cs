@@ -46,6 +46,9 @@ namespace Almacen_ETR.CapaPresentacion
             // 
             // dataGridView
             // 
+            this.dataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
@@ -188,6 +191,7 @@ namespace Almacen_ETR.CapaPresentacion
             this.Controls.Add(this.btnDeleteRegisterOutput);
             this.Controls.Add(this.LabelTitle);
             this.Controls.Add(this.dataGridView);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegistryOutputForm";
             this.Text = "Registro de salidas ";
             this.Load += new System.EventHandler(this.RegistryOutputForm_Load);

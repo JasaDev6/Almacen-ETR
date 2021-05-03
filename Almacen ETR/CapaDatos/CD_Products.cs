@@ -27,14 +27,13 @@ namespace Almacen_ETR
             return table;
         }
 
-        public void insert(string Marca, string Modelo, string Tipo, string Vnominal, string Inominal)
+        public void insert(string Marca, string Modelo, string Vnominal, string Inominal)
         {
             comand.Connection = conexion.Conectar();
             comand.CommandText = "InsertNewType";
             comand.CommandType = CommandType.StoredProcedure;
             comand.Parameters.AddWithValue("@Marca", Marca);
             comand.Parameters.AddWithValue("@Modelo", Modelo);
-            comand.Parameters.AddWithValue("@Tipo", Tipo);
             comand.Parameters.AddWithValue("@Vnominal", Vnominal);
             comand.Parameters.AddWithValue("@Inominal", Inominal);
             comand.ExecuteNonQuery();
@@ -42,14 +41,13 @@ namespace Almacen_ETR
             conexion.Desconectar();
         }
 
-        public void edit(string Marca, string Modelo, string Tipo, string Vnominal, string Inominal, int Id)
+        public void edit(string Marca, string Modelo, string Vnominal, string Inominal, int Id)
         {
             comand.Connection = conexion.Conectar();
             comand.CommandText = "EditNewType";
             comand.CommandType = CommandType.StoredProcedure;
             comand.Parameters.AddWithValue("@Marca", Marca);
             comand.Parameters.AddWithValue("@Modelo", Modelo);
-            comand.Parameters.AddWithValue("@Tipo", Tipo);
             comand.Parameters.AddWithValue("@Vnominal", Vnominal);
             comand.Parameters.AddWithValue("@Inominal", Inominal);
             comand.Parameters.AddWithValue("@Id", Id);

@@ -44,10 +44,8 @@ namespace Almacen_ETR
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.comboBoxMarca = new System.Windows.Forms.ComboBox();
             this.comboBoxModelo = new System.Windows.Forms.ComboBox();
-            this.comboBoxTipo = new System.Windows.Forms.ComboBox();
             this.comboBoxVnominal = new System.Windows.Forms.ComboBox();
             this.comboBoxInominal = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -76,7 +74,7 @@ namespace Almacen_ETR
             // textboxVersion
             // 
             this.textboxVersion.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxVersion.Location = new System.Drawing.Point(117, 136);
+            this.textboxVersion.Location = new System.Drawing.Point(116, 137);
             this.textboxVersion.Name = "textboxVersion";
             this.textboxVersion.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textboxVersion.Size = new System.Drawing.Size(269, 21);
@@ -85,7 +83,7 @@ namespace Almacen_ETR
             // textboxNserie
             // 
             this.textboxNserie.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxNserie.Location = new System.Drawing.Point(116, 312);
+            this.textboxNserie.Location = new System.Drawing.Point(116, 250);
             this.textboxNserie.Name = "textboxNserie";
             this.textboxNserie.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textboxNserie.Size = new System.Drawing.Size(269, 21);
@@ -139,7 +137,7 @@ namespace Almacen_ETR
             // textboxOrigen
             // 
             this.textboxOrigen.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxOrigen.Location = new System.Drawing.Point(167, 57);
+            this.textboxOrigen.Location = new System.Drawing.Point(167, 61);
             this.textboxOrigen.Name = "textboxOrigen";
             this.textboxOrigen.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textboxOrigen.Size = new System.Drawing.Size(269, 21);
@@ -148,7 +146,7 @@ namespace Almacen_ETR
             // textboxULab
             // 
             this.textboxULab.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxULab.Location = new System.Drawing.Point(167, 93);
+            this.textboxULab.Location = new System.Drawing.Point(167, 97);
             this.textboxULab.Name = "textboxULab";
             this.textboxULab.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textboxULab.Size = new System.Drawing.Size(269, 21);
@@ -166,7 +164,7 @@ namespace Almacen_ETR
             // textboxTablero
             // 
             this.textboxTablero.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxTablero.Location = new System.Drawing.Point(167, 180);
+            this.textboxTablero.Location = new System.Drawing.Point(167, 171);
             this.textboxTablero.Name = "textboxTablero";
             this.textboxTablero.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textboxTablero.Size = new System.Drawing.Size(269, 21);
@@ -175,7 +173,7 @@ namespace Almacen_ETR
             // textboxObs
             // 
             this.textboxObs.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxObs.Location = new System.Drawing.Point(167, 269);
+            this.textboxObs.Location = new System.Drawing.Point(167, 250);
             this.textboxObs.Multiline = true;
             this.textboxObs.Name = "textboxObs";
             this.textboxObs.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -186,7 +184,7 @@ namespace Almacen_ETR
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(62, 229);
+            this.label13.Location = new System.Drawing.Point(62, 215);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(99, 15);
             this.label13.TabIndex = 31;
@@ -201,9 +199,9 @@ namespace Almacen_ETR
             this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(12, 434);
+            this.dataGridView.Location = new System.Drawing.Point(12, 393);
             this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(1160, 369);
+            this.dataGridView.Size = new System.Drawing.Size(1160, 332);
             this.dataGridView.TabIndex = 34;
             // 
             // comboBoxMarca
@@ -222,29 +220,18 @@ namespace Almacen_ETR
             this.comboBoxModelo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxModelo.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxModelo.FormattingEnabled = true;
-            this.comboBoxModelo.Location = new System.Drawing.Point(116, 93);
+            this.comboBoxModelo.Location = new System.Drawing.Point(116, 97);
             this.comboBoxModelo.Name = "comboBoxModelo";
             this.comboBoxModelo.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.comboBoxModelo.Size = new System.Drawing.Size(269, 23);
             this.comboBoxModelo.TabIndex = 36;
-            // 
-            // comboBoxTipo
-            // 
-            this.comboBoxTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxTipo.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxTipo.FormattingEnabled = true;
-            this.comboBoxTipo.Location = new System.Drawing.Point(116, 180);
-            this.comboBoxTipo.Name = "comboBoxTipo";
-            this.comboBoxTipo.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.comboBoxTipo.Size = new System.Drawing.Size(269, 23);
-            this.comboBoxTipo.TabIndex = 37;
             // 
             // comboBoxVnominal
             // 
             this.comboBoxVnominal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxVnominal.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxVnominal.FormattingEnabled = true;
-            this.comboBoxVnominal.Location = new System.Drawing.Point(116, 225);
+            this.comboBoxVnominal.Location = new System.Drawing.Point(116, 174);
             this.comboBoxVnominal.Name = "comboBoxVnominal";
             this.comboBoxVnominal.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.comboBoxVnominal.Size = new System.Drawing.Size(269, 23);
@@ -256,27 +243,17 @@ namespace Almacen_ETR
             this.comboBoxInominal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxInominal.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxInominal.FormattingEnabled = true;
-            this.comboBoxInominal.Location = new System.Drawing.Point(116, 269);
+            this.comboBoxInominal.Location = new System.Drawing.Point(116, 212);
             this.comboBoxInominal.Name = "comboBoxInominal";
             this.comboBoxInominal.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.comboBoxInominal.Size = new System.Drawing.Size(269, 23);
             this.comboBoxInominal.TabIndex = 39;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(61, 184);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 15);
-            this.label2.TabIndex = 41;
-            this.label2.Text = "(*) Tipo";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(37, 273);
+            this.label3.Location = new System.Drawing.Point(37, 215);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 15);
             this.label3.TabIndex = 42;
@@ -294,7 +271,7 @@ namespace Almacen_ETR
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(48, 138);
+            this.label5.Location = new System.Drawing.Point(48, 134);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(113, 15);
             this.label5.TabIndex = 44;
@@ -314,7 +291,7 @@ namespace Almacen_ETR
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(33, 229);
+            this.label7.Location = new System.Drawing.Point(32, 177);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(78, 15);
             this.label7.TabIndex = 46;
@@ -333,7 +310,7 @@ namespace Almacen_ETR
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(74, 273);
+            this.label10.Location = new System.Drawing.Point(74, 253);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(87, 15);
             this.label10.TabIndex = 48;
@@ -343,7 +320,7 @@ namespace Almacen_ETR
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(51, 28);
+            this.label11.Location = new System.Drawing.Point(52, 28);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(60, 15);
             this.label11.TabIndex = 49;
@@ -363,7 +340,7 @@ namespace Almacen_ETR
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(21, 312);
+            this.label14.Location = new System.Drawing.Point(21, 253);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(85, 15);
             this.label14.TabIndex = 51;
@@ -372,7 +349,7 @@ namespace Almacen_ETR
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(23, 97);
+            this.label15.Location = new System.Drawing.Point(23, 100);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(138, 15);
             this.label15.TabIndex = 52;
@@ -381,7 +358,7 @@ namespace Almacen_ETR
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(78, 184);
+            this.label16.Location = new System.Drawing.Point(78, 174);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(83, 15);
             this.label16.TabIndex = 53;
@@ -402,7 +379,6 @@ namespace Almacen_ETR
             this.groupBox2.Controls.Add(this.Descripción);
             this.groupBox2.Controls.Add(this.textBoxDescription);
             this.groupBox2.Controls.Add(this.comboBoxMarca);
-            this.groupBox2.Controls.Add(this.comboBoxTipo);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.comboBoxInominal);
             this.groupBox2.Controls.Add(this.label11);
@@ -410,7 +386,6 @@ namespace Almacen_ETR
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.textboxVersion);
             this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.comboBoxVnominal);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.textboxNserie);
@@ -419,7 +394,7 @@ namespace Almacen_ETR
             this.groupBox2.Location = new System.Drawing.Point(12, 55);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox2.Size = new System.Drawing.Size(399, 362);
+            this.groupBox2.Size = new System.Drawing.Size(399, 332);
             this.groupBox2.TabIndex = 56;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "DATOS DEL EQUIPO";
@@ -428,7 +403,7 @@ namespace Almacen_ETR
             // 
             this.Descripción.AutoSize = true;
             this.Descripción.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Descripción.Location = new System.Drawing.Point(21, 61);
+            this.Descripción.Location = new System.Drawing.Point(17, 64);
             this.Descripción.Name = "Descripción";
             this.Descripción.Size = new System.Drawing.Size(94, 15);
             this.Descripción.TabIndex = 53;
@@ -437,7 +412,7 @@ namespace Almacen_ETR
             // textBoxDescription
             // 
             this.textBoxDescription.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxDescription.Location = new System.Drawing.Point(116, 58);
+            this.textBoxDescription.Location = new System.Drawing.Point(116, 61);
             this.textBoxDescription.Name = "textBoxDescription";
             this.textBoxDescription.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBoxDescription.Size = new System.Drawing.Size(269, 21);
@@ -465,7 +440,7 @@ namespace Almacen_ETR
             this.groupBox3.Location = new System.Drawing.Point(475, 55);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox3.Size = new System.Drawing.Size(447, 362);
+            this.groupBox3.Size = new System.Drawing.Size(447, 332);
             this.groupBox3.TabIndex = 57;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "    DATOS DE ORIGEN";
@@ -473,7 +448,7 @@ namespace Almacen_ETR
             // dateTimeIncome
             // 
             this.dateTimeIncome.AutoSize = true;
-            this.dateTimeIncome.Location = new System.Drawing.Point(167, 229);
+            this.dateTimeIncome.Location = new System.Drawing.Point(167, 215);
             this.dateTimeIncome.Name = "dateTimeIncome";
             this.dateTimeIncome.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dateTimeIncome.Size = new System.Drawing.Size(39, 15);
@@ -509,7 +484,7 @@ namespace Almacen_ETR
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1184, 815);
+            this.ClientSize = new System.Drawing.Size(1184, 737);
             this.Controls.Add(this.btnClean);
             this.Controls.Add(this.btnExportIntoExcel);
             this.Controls.Add(this.groupBox3);
@@ -520,7 +495,7 @@ namespace Almacen_ETR
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnEdit);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MaximizeBox = false;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "IncomeStoreForm";
             this.Text = "Formulario de registro";
             this.Load += new System.EventHandler(this.IncomeStoreForm_Load);
@@ -550,10 +525,8 @@ namespace Almacen_ETR
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.ComboBox comboBoxMarca;
         private System.Windows.Forms.ComboBox comboBoxModelo;
-        private System.Windows.Forms.ComboBox comboBoxTipo;
         private System.Windows.Forms.ComboBox comboBoxVnominal;
         private System.Windows.Forms.ComboBox comboBoxInominal;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;

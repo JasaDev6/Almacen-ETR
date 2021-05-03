@@ -33,14 +33,12 @@ namespace Almacen_ETR.CapaPresentacion
             this.buttonEdit = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.textBoxModelo = new System.Windows.Forms.TextBox();
-            this.textBoxTipo = new System.Windows.Forms.TextBox();
             this.textBoxVnominal = new System.Windows.Forms.TextBox();
             this.textBoxInominal = new System.Windows.Forms.TextBox();
             this.textBoxMarca = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -51,7 +49,7 @@ namespace Almacen_ETR.CapaPresentacion
             // buttonSave
             // 
             this.buttonSave.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSave.Location = new System.Drawing.Point(221, 151);
+            this.buttonSave.Location = new System.Drawing.Point(221, 105);
             this.buttonSave.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(112, 29);
@@ -63,7 +61,7 @@ namespace Almacen_ETR.CapaPresentacion
             // buttonEdit
             // 
             this.buttonEdit.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEdit.Location = new System.Drawing.Point(341, 151);
+            this.buttonEdit.Location = new System.Drawing.Point(341, 105);
             this.buttonEdit.Margin = new System.Windows.Forms.Padding(4);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(112, 29);
@@ -75,7 +73,7 @@ namespace Almacen_ETR.CapaPresentacion
             // buttonDelete
             // 
             this.buttonDelete.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDelete.Location = new System.Drawing.Point(461, 151);
+            this.buttonDelete.Location = new System.Drawing.Point(461, 105);
             this.buttonDelete.Margin = new System.Windows.Forms.Padding(4);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(111, 29);
@@ -86,23 +84,15 @@ namespace Almacen_ETR.CapaPresentacion
             // 
             // textBoxModelo
             // 
-            this.textBoxModelo.Location = new System.Drawing.Point(650, 46);
+            this.textBoxModelo.Location = new System.Drawing.Point(650, 40);
             this.textBoxModelo.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxModelo.Name = "textBoxModelo";
             this.textBoxModelo.Size = new System.Drawing.Size(243, 22);
             this.textBoxModelo.TabIndex = 3;
             // 
-            // textBoxTipo
-            // 
-            this.textBoxTipo.Location = new System.Drawing.Point(221, 76);
-            this.textBoxTipo.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxTipo.Name = "textBoxTipo";
-            this.textBoxTipo.Size = new System.Drawing.Size(243, 22);
-            this.textBoxTipo.TabIndex = 4;
-            // 
             // textBoxVnominal
             // 
-            this.textBoxVnominal.Location = new System.Drawing.Point(650, 76);
+            this.textBoxVnominal.Location = new System.Drawing.Point(650, 70);
             this.textBoxVnominal.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxVnominal.Name = "textBoxVnominal";
             this.textBoxVnominal.Size = new System.Drawing.Size(243, 22);
@@ -110,7 +100,7 @@ namespace Almacen_ETR.CapaPresentacion
             // 
             // textBoxInominal
             // 
-            this.textBoxInominal.Location = new System.Drawing.Point(221, 106);
+            this.textBoxInominal.Location = new System.Drawing.Point(221, 69);
             this.textBoxInominal.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxInominal.Name = "textBoxInominal";
             this.textBoxInominal.Size = new System.Drawing.Size(243, 22);
@@ -118,7 +108,7 @@ namespace Almacen_ETR.CapaPresentacion
             // 
             // textBoxMarca
             // 
-            this.textBoxMarca.Location = new System.Drawing.Point(221, 46);
+            this.textBoxMarca.Location = new System.Drawing.Point(221, 40);
             this.textBoxMarca.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxMarca.Name = "textBoxMarca";
             this.textBoxMarca.Size = new System.Drawing.Size(243, 22);
@@ -133,17 +123,17 @@ namespace Almacen_ETR.CapaPresentacion
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 188);
+            this.dataGridView1.Location = new System.Drawing.Point(13, 142);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1038, 367);
+            this.dataGridView1.Size = new System.Drawing.Size(1038, 349);
             this.dataGridView1.TabIndex = 8;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(167, 49);
+            this.label1.Location = new System.Drawing.Point(167, 43);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 15);
@@ -154,29 +144,18 @@ namespace Almacen_ETR.CapaPresentacion
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(588, 49);
+            this.label2.Location = new System.Drawing.Point(588, 43);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 15);
             this.label2.TabIndex = 10;
             this.label2.Text = "Modelo";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(177, 79);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(32, 15);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Tipo";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(578, 79);
+            this.label4.Location = new System.Drawing.Point(578, 73);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 15);
@@ -187,7 +166,7 @@ namespace Almacen_ETR.CapaPresentacion
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(155, 109);
+            this.label5.Location = new System.Drawing.Point(155, 73);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 15);
@@ -207,7 +186,7 @@ namespace Almacen_ETR.CapaPresentacion
             // btnClean
             // 
             this.btnClean.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClean.Location = new System.Drawing.Point(580, 151);
+            this.btnClean.Location = new System.Drawing.Point(580, 105);
             this.btnClean.Margin = new System.Windows.Forms.Padding(4);
             this.btnClean.Name = "btnClean";
             this.btnClean.Size = new System.Drawing.Size(111, 29);
@@ -221,24 +200,23 @@ namespace Almacen_ETR.CapaPresentacion
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1064, 568);
+            this.ClientSize = new System.Drawing.Size(1064, 504);
             this.Controls.Add(this.btnClean);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBoxMarca);
             this.Controls.Add(this.textBoxInominal);
             this.Controls.Add(this.textBoxVnominal);
-            this.Controls.Add(this.textBoxTipo);
             this.Controls.Add(this.textBoxModelo);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonEdit);
             this.Controls.Add(this.buttonSave);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ProductsForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
@@ -256,14 +234,12 @@ namespace Almacen_ETR.CapaPresentacion
         private System.Windows.Forms.Button buttonEdit;
         private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.TextBox textBoxModelo;
-        private System.Windows.Forms.TextBox textBoxTipo;
         private System.Windows.Forms.TextBox textBoxVnominal;
         private System.Windows.Forms.TextBox textBoxInominal;
         private System.Windows.Forms.TextBox textBoxMarca;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;

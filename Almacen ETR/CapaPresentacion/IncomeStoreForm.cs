@@ -72,21 +72,6 @@ namespace Almacen_ETR
             comboBoxModelo.SelectedIndex = 0;
         }
 
-        private void SelectComboBoxTipo()
-        {
-            comboBoxTipo.Items.Clear();
-            conexion.Conectar();
-            SqlCommand comand = new SqlCommand("select distinct Tipo from NewType where Tipo is not null and Tipo <> ''", conexion.Conectar());
-            SqlDataReader datareader = comand.ExecuteReader();
-            while (datareader.Read())
-            {
-                comboBoxTipo.Items.Add(datareader[0].ToString());
-            }
-            conexion.Desconectar();
-            comboBoxTipo.Items.Insert(0, "Seleccione un Tipo");
-            comboBoxTipo.SelectedIndex = 0;   
-        }
-
         private void SelectComboBoxVnominal()
         {
             comboBoxVnominal.Items.Clear();
@@ -122,7 +107,6 @@ namespace Almacen_ETR
             show(); 
             SelectComboBoxMarca();
             SelectComboBoxModelo();
-            SelectComboBoxTipo();
             SelectComboBoxVnominal();
             SelectComboBoxInominal();
         }
@@ -141,8 +125,8 @@ namespace Almacen_ETR
 
         private bool Ischeckfields()
         {
-            if (!string.IsNullOrEmpty(textBoxDescription.Text) && !string.IsNullOrEmpty(comboBoxMarca.Text) && !string.IsNullOrEmpty(comboBoxModelo.Text) && !string.IsNullOrEmpty(comboBoxTipo.Text) && !string.IsNullOrEmpty(textboxNserie.Text) && !string.IsNullOrEmpty(textboxOrigen.Text) && !string.IsNullOrEmpty(textboxEstado.Text)
-                && !comboBoxMarca.SelectedItem.Equals("Seleccione una marca") && !comboBoxModelo.SelectedItem.Equals("Seleccione un modelo") && !comboBoxTipo.SelectedItem.Equals("Seleccione un Tipo") && !comboBoxVnominal.SelectedItem.Equals("Seleccione un Vnominal") && !comboBoxInominal.SelectedItem.Equals("Seleccione un Inominal"))
+            if (!string.IsNullOrEmpty(textBoxDescription.Text) && !string.IsNullOrEmpty(comboBoxMarca.Text) && !string.IsNullOrEmpty(comboBoxModelo.Text) && !string.IsNullOrEmpty(textboxNserie.Text) && !string.IsNullOrEmpty(textboxOrigen.Text) && !string.IsNullOrEmpty(textboxEstado.Text)
+                && !comboBoxMarca.SelectedItem.Equals("Seleccione una marca") && !comboBoxModelo.SelectedItem.Equals("Seleccione un modelo") && !comboBoxVnominal.SelectedItem.Equals("Seleccione un Vnominal") && !comboBoxInominal.SelectedItem.Equals("Seleccione un Inominal"))
             {
                 return true;
             }
@@ -168,13 +152,12 @@ namespace Almacen_ETR
                 {
                     if (Ischeckfields())
                     {
-                        objectCN.insertETR(comboBoxMarca.Text, textBoxDescription.Text, comboBoxModelo.Text, textboxVersion.Text, comboBoxTipo.Text, comboBoxVnominal.Text, comboBoxInominal.Text, textboxNserie.Text, textboxBDI.Text, textboxOrigen.Text, textboxULab.Text, textboxEstado.Text, textboxTablero.Text, dateTimeIncome.Text, textboxObs.Text, ende, IdUse);
+                        objectCN.insertETR(comboBoxMarca.Text, textBoxDescription.Text, comboBoxModelo.Text, textboxVersion.Text, comboBoxVnominal.Text, comboBoxInominal.Text, textboxNserie.Text, textboxBDI.Text, textboxOrigen.Text, textboxULab.Text, textboxEstado.Text, textboxTablero.Text, dateTimeIncome.Text, textboxObs.Text, ende, IdUse);
                         MessageBox.Show("Se inserto correctamente");
                         show();
                         cleanForm();
                         SelectComboBoxMarca();
                         SelectComboBoxModelo();
-                        SelectComboBoxTipo();
                         SelectComboBoxVnominal();
                         SelectComboBoxInominal();
                     }
@@ -188,13 +171,12 @@ namespace Almacen_ETR
             {
                 try
                 {
-                    objectCN.editETR(comboBoxMarca.Text, textBoxDescription.Text, comboBoxModelo.Text, textboxVersion.Text, comboBoxTipo.Text, comboBoxVnominal.Text, comboBoxInominal.Text, textboxNserie.Text, textboxBDI.Text, textboxOrigen.Text, textboxULab.Text, textboxEstado.Text, textboxTablero.Text, dateTimeIncome.Text, textboxObs.Text, Id, ende);
+                    objectCN.editETR(comboBoxMarca.Text, textBoxDescription.Text, comboBoxModelo.Text, textboxVersion.Text, comboBoxVnominal.Text, comboBoxInominal.Text, textboxNserie.Text, textboxBDI.Text, textboxOrigen.Text, textboxULab.Text, textboxEstado.Text, textboxTablero.Text, dateTimeIncome.Text, textboxObs.Text, Id, ende);
                     MessageBox.Show("Se edito correctamente");
                     show();
                     cleanForm();
                     SelectComboBoxMarca();
                     SelectComboBoxModelo();
-                    SelectComboBoxTipo();
                     SelectComboBoxVnominal();
                     SelectComboBoxInominal();
                     edit = false;
@@ -214,7 +196,6 @@ namespace Almacen_ETR
             comboBoxVnominal.Items.Clear();
             comboBoxInominal.Items.Clear();
             textboxVersion.Clear();
-            comboBoxTipo.Items.Clear();
             textboxNserie.Clear();
             textboxBDI.Clear();
             textboxOrigen.Clear();
@@ -235,7 +216,6 @@ namespace Almacen_ETR
                     textBoxDescription.Text = dataGridView.CurrentRow.Cells["Descripción"].Value.ToString();
                     comboBoxModelo.Text = dataGridView.CurrentRow.Cells["Modelo"].Value.ToString();
                     textboxVersion.Text = dataGridView.CurrentRow.Cells["Versión"].Value.ToString();
-                    comboBoxTipo.Text = dataGridView.CurrentRow.Cells["Tipo"].Value.ToString();
                     comboBoxVnominal.Text = dataGridView.CurrentRow.Cells["Vnominal"].Value.ToString();
                     comboBoxInominal.Text = dataGridView.CurrentRow.Cells["Inominal"].Value.ToString();
                     textboxNserie.Text = dataGridView.CurrentRow.Cells["Nserie"].Value.ToString();
@@ -268,7 +248,6 @@ namespace Almacen_ETR
                         textBoxDescription.Text = dataGridView.CurrentRow.Cells["Descripcion"].Value.ToString();
                         comboBoxModelo.Text = dataGridView.CurrentRow.Cells["Modelo"].Value.ToString();
                         textboxVersion.Text = dataGridView.CurrentRow.Cells["Version"].Value.ToString();
-                        comboBoxTipo.Text = dataGridView.CurrentRow.Cells["Tipo"].Value.ToString();
                         comboBoxVnominal.Text = dataGridView.CurrentRow.Cells["Vnominal"].Value.ToString();
                         comboBoxInominal.Text = dataGridView.CurrentRow.Cells["Inominal"].Value.ToString();
                         textboxNserie.Text = dataGridView.CurrentRow.Cells["Nserie"].Value.ToString();
@@ -344,7 +323,6 @@ namespace Almacen_ETR
             cleanForm();
             SelectComboBoxMarca();
             SelectComboBoxModelo();
-            SelectComboBoxTipo();
             SelectComboBoxVnominal();
             SelectComboBoxInominal();
         }

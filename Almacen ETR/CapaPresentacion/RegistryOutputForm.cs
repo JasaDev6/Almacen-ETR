@@ -174,7 +174,6 @@ namespace Almacen_ETR.CapaPresentacion
                     edit = true;
                     string Marca = dataGridView.CurrentRow.Cells["Marca"].Value.ToString();
                     string Modelo = dataGridView.CurrentRow.Cells["Modelo"].Value.ToString();
-                    string Tipo = dataGridView.CurrentRow.Cells["Tipo"].Value.ToString();
                     string Nserie = dataGridView.CurrentRow.Cells["Nserie"].Value.ToString();
                     string BDI = dataGridView.CurrentRow.Cells["BDI"].Value.ToString();
                     string ULab = dataGridView.CurrentRow.Cells["Ulab"].Value.ToString();
@@ -187,7 +186,7 @@ namespace Almacen_ETR.CapaPresentacion
 
                     this.Hide();
                     OutputForm formETR = new OutputForm(Convert.ToInt32(IdUserOutput));
-                    formETR.getEditRegisterOutput(Marca, Modelo, Tipo, Nserie, BDI, ULab, Destino, TableroDestino, FechaSalida, Observacion, IdOutput, edit);
+                    formETR.getEditRegisterOutput(Marca, Modelo, Nserie, BDI, ULab, Destino, TableroDestino, FechaSalida, Observacion, IdOutput, edit);
                     formETR.ShowDialog();
                     this.Show();
                     show();

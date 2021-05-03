@@ -79,7 +79,7 @@ namespace Almacen_ETR
             return IdIncome;
         }
 
-        public void insert(string marca, string description, string modelo, string version, string tipo, string vnominal, string inominal, string nserie, string BDI, string origen, string ULab, string estado, string tablero, string dateIni, string Obs, string ende, int IdUse)
+        public void insert(string marca, string description, string modelo, string version, string vnominal, string inominal, string nserie, string BDI, string origen, string ULab, string estado, string tablero, string dateIni, string Obs, string ende, int IdUse)
         {
             comand.Connection = conexion.Conectar();      
             comand.CommandText = "InsertIncome";
@@ -88,7 +88,6 @@ namespace Almacen_ETR
             comand.Parameters.AddWithValue("@Descripción", description);
             comand.Parameters.AddWithValue("@Modelo", modelo);
             comand.Parameters.AddWithValue("@Versión", version);
-            comand.Parameters.AddWithValue("@Tipo", tipo);
             comand.Parameters.AddWithValue("@Vnominal", vnominal);
             comand.Parameters.AddWithValue("@Inominal", inominal);
             comand.Parameters.AddWithValue("@Nserie", nserie);
@@ -113,7 +112,7 @@ namespace Almacen_ETR
             conexion.Desconectar();
         }
 
-        public void edit(string marca, string description, string modelo, string version, string tipo, string vnominal, string inominal, string nserie, string BDI, string origen, string ULab, string estado, string tablero, string dateIni, string Obs, int idETR, string ende)
+        public void edit(string marca, string description, string modelo, string version, string vnominal, string inominal, string nserie, string BDI, string origen, string ULab, string estado, string tablero, string dateIni, string Obs, int idETR, string ende)
         {
             comand.Connection = conexion.Conectar();
             comand.CommandText = "EditIncome";
@@ -122,7 +121,6 @@ namespace Almacen_ETR
             comand.Parameters.AddWithValue("@Descripción", description);
             comand.Parameters.AddWithValue("@Modelo", modelo);
             comand.Parameters.AddWithValue("@Versión", version);
-            comand.Parameters.AddWithValue("@Tipo", tipo);
             comand.Parameters.AddWithValue("@Vnominal", vnominal);
             comand.Parameters.AddWithValue("@Inominal", inominal);
             comand.Parameters.AddWithValue("@Nserie", nserie);

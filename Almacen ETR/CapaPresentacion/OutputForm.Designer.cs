@@ -42,13 +42,11 @@ namespace Almacen_ETR
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.LabelULab = new System.Windows.Forms.Label();
             this.LabelBDI = new System.Windows.Forms.Label();
             this.LabelNserie = new System.Windows.Forms.Label();
-            this.LabelTipo = new System.Windows.Forms.Label();
             this.LabelModelo = new System.Windows.Forms.Label();
             this.LabelMarca = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -151,13 +149,11 @@ namespace Almacen_ETR
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.LabelULab);
             this.groupBox1.Controls.Add(this.LabelBDI);
             this.groupBox1.Controls.Add(this.LabelNserie);
-            this.groupBox1.Controls.Add(this.LabelTipo);
             this.groupBox1.Controls.Add(this.LabelModelo);
             this.groupBox1.Controls.Add(this.LabelMarca);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -180,7 +176,7 @@ namespace Almacen_ETR
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(42, 275);
+            this.label7.Location = new System.Drawing.Point(42, 257);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(33, 16);
             this.label7.TabIndex = 10;
@@ -189,20 +185,11 @@ namespace Almacen_ETR
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(42, 222);
+            this.label8.Location = new System.Drawing.Point(42, 191);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(56, 16);
             this.label8.TabIndex = 9;
             this.label8.Text = "NSerie";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(42, 174);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(40, 16);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Tipo";
             // 
             // label10
             // 
@@ -234,7 +221,7 @@ namespace Almacen_ETR
             // LabelBDI
             // 
             this.LabelBDI.AutoSize = true;
-            this.LabelBDI.Location = new System.Drawing.Point(265, 275);
+            this.LabelBDI.Location = new System.Drawing.Point(265, 260);
             this.LabelBDI.Name = "LabelBDI";
             this.LabelBDI.Size = new System.Drawing.Size(33, 16);
             this.LabelBDI.TabIndex = 4;
@@ -243,20 +230,11 @@ namespace Almacen_ETR
             // LabelNserie
             // 
             this.LabelNserie.AutoSize = true;
-            this.LabelNserie.Location = new System.Drawing.Point(265, 222);
+            this.LabelNserie.Location = new System.Drawing.Point(265, 191);
             this.LabelNserie.Name = "LabelNserie";
             this.LabelNserie.Size = new System.Drawing.Size(56, 16);
             this.LabelNserie.TabIndex = 3;
             this.LabelNserie.Text = "NSerie";
-            // 
-            // LabelTipo
-            // 
-            this.LabelTipo.AutoSize = true;
-            this.LabelTipo.Location = new System.Drawing.Point(265, 174);
-            this.LabelTipo.Name = "LabelTipo";
-            this.LabelTipo.Size = new System.Drawing.Size(40, 16);
-            this.LabelTipo.TabIndex = 2;
-            this.LabelTipo.Text = "Tipo";
             // 
             // LabelModelo
             // 
@@ -308,7 +286,6 @@ namespace Almacen_ETR
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MaximizeBox = false;
             this.Name = "OutputForm";
             this.Text = "Salida de almacen";
             this.Load += new System.EventHandler(this.OutputForm_Load);
@@ -337,13 +314,11 @@ namespace Almacen_ETR
         private System.Windows.Forms.Label LabelULab;
         private System.Windows.Forms.Label LabelBDI;
         private System.Windows.Forms.Label LabelNserie;
-        private System.Windows.Forms.Label LabelTipo;
         private System.Windows.Forms.Label LabelModelo;
         private System.Windows.Forms.Label LabelMarca;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label LabelDateOutput;
