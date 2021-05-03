@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Almacen ETR", "Almacen ETR\Almacen ETR.csproj", "{EEDB2D90-8C54-4C36-9C4B-599FF63AD2C9}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Laboratorio", "Laboratorio\Laboratorio.vdproj", "{12C5276A-93C9-4786-9A33-0FDC2ED32A52}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Lab", "Lab\Lab.vdproj", "{144F20C9-5503-4D6D-90DA-A5C9EF3BB735}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,10 @@ Global
 		{EEDB2D90-8C54-4C36-9C4B-599FF63AD2C9}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{EEDB2D90-8C54-4C36-9C4B-599FF63AD2C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEDB2D90-8C54-4C36-9C4B-599FF63AD2C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12C5276A-93C9-4786-9A33-0FDC2ED32A52}.Debug|Any CPU.ActiveCfg = Debug
+		{12C5276A-93C9-4786-9A33-0FDC2ED32A52}.Release|Any CPU.ActiveCfg = Release
+		{144F20C9-5503-4D6D-90DA-A5C9EF3BB735}.Debug|Any CPU.ActiveCfg = Debug
+		{144F20C9-5503-4D6D-90DA-A5C9EF3BB735}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
