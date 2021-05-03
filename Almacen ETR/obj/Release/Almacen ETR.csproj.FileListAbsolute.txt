@@ -5,7 +5,6 @@ C:\Users\anton\source\repos\Almacen ETR\Almacen ETR\bin\Release\itextsharp.dll
 C:\Users\anton\source\repos\Almacen ETR\Almacen ETR\obj\Release\Almacen_ETR.IncomeStoreForm.resources
 C:\Users\anton\source\repos\Almacen ETR\Almacen ETR\obj\Release\Almacen_ETR.LoginScreenForm.resources
 C:\Users\anton\source\repos\Almacen ETR\Almacen ETR\obj\Release\Almacen_ETR.CapaPresentacion.SearchOutputUserForm.resources
-C:\Users\anton\source\repos\Almacen ETR\Almacen ETR\obj\Release\Almacen_ETR.CapaPresentacion.MenuUserForm.resources
 C:\Users\anton\source\repos\Almacen ETR\Almacen ETR\obj\Release\Almacen_ETR.OutputForm.resources
 C:\Users\anton\source\repos\Almacen ETR\Almacen ETR\obj\Release\Almacen_ETR.CapaPresentacion.ProductsForm.resources
 C:\Users\anton\source\repos\Almacen ETR\Almacen ETR\obj\Release\Almacen_ETR.CapaPresentacion.RegistryOutputForm.resources
@@ -19,4 +18,3 @@ C:\Users\anton\source\repos\Almacen ETR\Almacen ETR\obj\Release\Almacen ETR.cspr
 C:\Users\anton\source\repos\Almacen ETR\Almacen ETR\obj\Release\Almacen ETR.csproj.CopyComplete
 C:\Users\anton\source\repos\Almacen ETR\Almacen ETR\obj\Release\Almacen ETR.exe
 C:\Users\anton\source\repos\Almacen ETR\Almacen ETR\obj\Release\Almacen ETR.pdb
-C:\Users\anton\source\repos\Almacen ETR\Almacen ETR\obj\Release\Almacen ETR.csprojAssemblyReference.cache

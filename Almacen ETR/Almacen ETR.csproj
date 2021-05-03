@@ -94,12 +94,6 @@
     <Compile Include="CapaPresentacion\SearchOutputUserForm.Designer.cs">
       <DependentUpon>SearchOutputUserForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CapaPresentacion\MenuUserForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaPresentacion\MenuUserForm.Designer.cs">
-      <DependentUpon>MenuUserForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="CapaPresentacion\ProductsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,11 +119,11 @@
       <DependentUpon>UserForm.cs</DependentUpon>
     </Compile>
     <Compile Include="CapaNegocio\Program.cs" />
-    <Compile Include="CapaPresentacion\MenuAdminForm.cs">
+    <Compile Include="CapaPresentacion\MenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CapaPresentacion\MenuAdminForm.Designer.cs">
-      <DependentUpon>MenuAdminForm.cs</DependentUpon>
+    <Compile Include="CapaPresentacion\MenuForm.Designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
     </Compile>
     <Compile Include="CapaPresentacion\OutputForm.cs">
       <SubType>Form</SubType>
@@ -155,9 +149,6 @@
     <EmbeddedResource Include="CapaPresentacion\SearchOutputUserForm.resx">
       <DependentUpon>SearchOutputUserForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CapaPresentacion\MenuUserForm.resx">
-      <DependentUpon>MenuUserForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CapaPresentacion\OutputForm.resx">
       <DependentUpon>OutputForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -173,8 +164,8 @@
     <EmbeddedResource Include="CapaPresentacion\UserForm.resx">
       <DependentUpon>UserForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CapaPresentacion\MenuAdminForm.resx">
-      <DependentUpon>MenuAdminForm.cs</DependentUpon>
+    <EmbeddedResource Include="CapaPresentacion\MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

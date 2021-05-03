@@ -51,9 +51,9 @@ namespace Almacen_ETR
             this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(247, 185);
+            this.pictureBox1.Location = new System.Drawing.Point(192, 146);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(73, 59);
+            this.pictureBox1.Size = new System.Drawing.Size(36, 40);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -63,9 +63,9 @@ namespace Almacen_ETR
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(247, 264);
+            this.pictureBox2.Location = new System.Drawing.Point(192, 214);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(73, 59);
+            this.pictureBox2.Size = new System.Drawing.Size(36, 40);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
@@ -75,9 +75,9 @@ namespace Almacen_ETR
             this.BtnEnter.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnEnter.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.BtnEnter.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEnter.Location = new System.Drawing.Point(215, 379);
+            this.BtnEnter.Location = new System.Drawing.Point(206, 301);
             this.BtnEnter.Name = "BtnEnter";
-            this.BtnEnter.Size = new System.Drawing.Size(210, 54);
+            this.BtnEnter.Size = new System.Drawing.Size(115, 25);
             this.BtnEnter.TabIndex = 3;
             this.BtnEnter.Text = "Entrar";
             this.BtnEnter.UseVisualStyleBackColor = false;
@@ -87,12 +87,12 @@ namespace Almacen_ETR
             // 
             this.textUser.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textUser.Location = new System.Drawing.Point(326, 201);
+            this.textUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textUser.Location = new System.Drawing.Point(240, 146);
             this.textUser.Multiline = true;
             this.textUser.Name = "textUser";
             this.textUser.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textUser.Size = new System.Drawing.Size(297, 43);
+            this.textUser.Size = new System.Drawing.Size(232, 22);
             this.textUser.TabIndex = 4;
             this.textUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -102,10 +102,10 @@ namespace Almacen_ETR
             this.textPassword.BackColor = System.Drawing.SystemColors.Window;
             this.textPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textPassword.Location = new System.Drawing.Point(326, 280);
+            this.textPassword.Location = new System.Drawing.Point(240, 214);
             this.textPassword.Multiline = true;
             this.textPassword.Name = "textPassword";
-            this.textPassword.Size = new System.Drawing.Size(297, 43);
+            this.textPassword.Size = new System.Drawing.Size(232, 22);
             this.textPassword.TabIndex = 5;
             this.textPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -115,7 +115,7 @@ namespace Almacen_ETR
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(398, 141);
+            this.label1.Location = new System.Drawing.Point(287, 101);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(129, 17);
             this.label1.TabIndex = 6;
@@ -126,9 +126,9 @@ namespace Almacen_ETR
             this.BtnExit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnExit.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.BtnExit.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnExit.Location = new System.Drawing.Point(443, 379);
+            this.BtnExit.Location = new System.Drawing.Point(352, 301);
             this.BtnExit.Name = "BtnExit";
-            this.BtnExit.Size = new System.Drawing.Size(210, 54);
+            this.BtnExit.Size = new System.Drawing.Size(115, 25);
             this.BtnExit.TabIndex = 7;
             this.BtnExit.Text = "Salir";
             this.BtnExit.UseVisualStyleBackColor = false;
@@ -141,7 +141,7 @@ namespace Almacen_ETR
             this.ShowPasswordCheckBox.BackColor = System.Drawing.SystemColors.Control;
             this.ShowPasswordCheckBox.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ShowPasswordCheckBox.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ShowPasswordCheckBox.Location = new System.Drawing.Point(503, 329);
+            this.ShowPasswordCheckBox.Location = new System.Drawing.Point(352, 242);
             this.ShowPasswordCheckBox.Name = "ShowPasswordCheckBox";
             this.ShowPasswordCheckBox.Size = new System.Drawing.Size(120, 19);
             this.ShowPasswordCheckBox.TabIndex = 8;
@@ -154,19 +154,19 @@ namespace Almacen_ETR
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(12, 12);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(307, 76);
+            this.pictureBox3.Size = new System.Drawing.Size(173, 54);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 9;
             this.pictureBox3.TabStop = false;
             // 
             // label2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(350, 17);
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(186, 9);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label2.Size = new System.Drawing.Size(522, 88);
+            this.label2.Size = new System.Drawing.Size(470, 69);
             this.label2.TabIndex = 10;
             this.label2.Text = "     SISTEMA DE INVENTARIO \r\nLABORATORIO PROTECCIONES\r\n";
             // 
@@ -176,7 +176,7 @@ namespace Almacen_ETR
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(897, 492);
+            this.ClientSize = new System.Drawing.Size(668, 371);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.ShowPasswordCheckBox);

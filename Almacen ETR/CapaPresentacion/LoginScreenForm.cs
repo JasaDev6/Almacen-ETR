@@ -75,24 +75,13 @@ namespace Almacen_ETR
                     textUser.Clear();
                     textPassword.Clear();
                     ShowPasswordCheckBox.Checked = false;
-                    if (type==1)
-                    {
-                        this.Hide();
-                        MenuAdminForm formMenu = new MenuAdminForm(IdUse, type);
-                        formMenu.ShowDialog(); 
-                        formMenu = null;
-                        this.Show();
-                        this.textUser.Select();
-                    }
-                    if (type==2)
-                    {
-                        this.Hide();
-                        MenuUserForm formMenu = new MenuUserForm(IdUse, type);
-                        formMenu.ShowDialog();
-                        formMenu = null;
-                        this.Show();
-                        this.textUser.Select();
-                    }
+                    
+                    this.Hide();
+                    MenuAdminForm formMenu = new MenuAdminForm(IdUse, type);
+                    formMenu.ShowDialog(); 
+                    formMenu = null;
+                    this.Show();
+                    this.textUser.Select();
                 }
                 else
                 {
